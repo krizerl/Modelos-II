@@ -1,6 +1,6 @@
-def division(dividendo, divisor, contador):
+def division(dividendo, divisor):
 	if dividendo >= divisor:
-		return division(dividendo - divisor, divisor, contador + 1)
-	return contador
+		return division(dividendo - divisor, divisor)+1
+	return 0
 
-print division(input("Ingrese el dividendo "), input("Ingrese el divisor "), 0)
+print division(input("Ingrese el dividendo "), input("Ingrese el divisor "))
