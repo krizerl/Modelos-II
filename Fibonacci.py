@@ -3,5 +3,4 @@ def fibonacci(variable):
         return variable
     else:
         return fibonacci(variable - 1) + fibonacci(variable - 2)
-
 print fibonacci(int(input("Ingrese el numero ")))
