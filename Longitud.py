@@ -1,6 +1,6 @@
-def longitud(num, contador):
+def longitud(num):
 	if num > 9:
-		return longitud(num/10, contador+1)
-	return contador
+		return longitud(num/10) + 1
+	return 1
 
-print longitud(input("Ingrese un numero"), 1)
+print longitud(input("Ingrese un numero "))
