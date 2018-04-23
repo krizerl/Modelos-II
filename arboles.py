@@ -14,7 +14,6 @@ def buscar( valor, arbol):
         return buscar(valor,arbol.derecha)
     return buscar(valor,arbol.izquierda)
 
-   
 def printArbo(arbol):
     if(arbol==None):
         return []
@@ -35,7 +34,7 @@ def insetrarALista(lista,arbol):
     else:
         return insetrarALista(lista[1:],insertarArbol(lista[0],arbol))
 
-                              
+    
 arbolS=Arbol(10,Arbol(5),Arbol(50,Arbol(30,Arbol(20),Arbol(49))))
 
 print(printArbo(insetrarALista([1,200,3,51],arbolS)))
